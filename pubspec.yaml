@@ -1,0 +1,37 @@
+name: mys
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+#------------ PACKAGE ------------#
+dependencies:
+  flutter:
+    sdk: flutter
+
+# Icons
+  cupertino_icons: ^1.0.8
+
+# State Management
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+#------------ ./ PACKAGE END ------------#
+
+flutter:
+  uses-material-design: true
+
+#------------ LOCAL ASSETS ------------#
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/icons/
