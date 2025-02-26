@@ -1,21 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:mys/app.dart';
+
 
 void main() {
-  runApp(const MyApp());
+
+  
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'MyS',
-      themeMode: ThemeMode.system,
-      darkTheme: ThemeData(),
-      theme: ThemeData(),
-    );
-  }
-}
 
 
