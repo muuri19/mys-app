@@ -19,8 +19,8 @@ class TColors {
       Color(0xFFB71C1C); // Merah tua untuk mode gelap
 
   // Background Container Colors
-  static const Color containerLight = Color(0xFFFFEBEE); // Merah muda
-  static const Color containerDark = Color(0xFFD32F2F); // Merah tua
+  static const Color containerLight = Colors.white; // Merah muda
+  static const Color containerDark = Colors.black; // Merah tua
 
   // Button Colors
   static const Color buttonPrimary = Color(0xFFFF0000); // Merah

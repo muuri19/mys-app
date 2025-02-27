@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mys/utils/constans/colors.dart';
 
 /// -- Light & Dark Elevated Button Theme
 class TElevatedButtonTheme {
@@ -8,15 +9,16 @@ class TElevatedButtonTheme {
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white, 
-      backgroundColor: Colors.blue,
+      foregroundColor: Colors.white,
+      backgroundColor: TColors.buttonPrimary,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: BorderSide(color: Colors.blue, width: 1),
-      padding: const EdgeInsets.symmetric( vertical: 18),
-      textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white),
+      side: BorderSide(color: TColors.buttonPrimary, width: 1),
+      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+      textStyle: TextStyle(
+          fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(8),
       ),
     ),
   );
@@ -25,15 +27,16 @@ class TElevatedButtonTheme {
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white, 
-      backgroundColor: Colors.blue,
+      foregroundColor: Colors.white,
+      backgroundColor: TColors.buttonPrimary,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: BorderSide(color: Colors.blue, width: 1),
-      padding: const EdgeInsets.symmetric( vertical: 18),
-      textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white),
+      side: BorderSide(color: TColors.buttonPrimary, width: 1),
+      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+      textStyle: TextStyle(
+          fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(8),
       ),
     ),
   );
