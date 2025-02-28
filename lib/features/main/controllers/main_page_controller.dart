@@ -1,8 +1,12 @@
+import 'dart:convert';
 
+import 'package:flutter/services.dart';
 import 'package:mailto/mailto.dart';
+import 'package:mys/features/main/models/certificate_model.dart';
+
 import 'package:mys/utils/constans/text_strings.dart';
 import 'package:mys/utils/logging/logger.dart';
-import 'package:open_file/open_file.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class MainPageController {
@@ -16,7 +20,7 @@ class MainPageController {
         throw Exception('Could not launch $_urlGithub');
       }
     } catch (e) {
-      print('Error launching GitHub: $e');
+      TLogger.log.e('Error launching Github: $e');
     }
   }
 
@@ -26,7 +30,7 @@ class MainPageController {
         throw Exception('Could not launch $_urlInstagram');
       }
     } catch (e) {
-      print('Error launching Instagram: $e');
+      TLogger.log.e('Error launching Instagram: $e');
     }
   }
 
@@ -36,7 +40,7 @@ class MainPageController {
         throw Exception('Could not launch $_urlSaweria');
       }
     } catch (e) {
-      print('Error launching Saweria: $e');
+      TLogger.log.e('Error launching Saweria: $e');
     }
   }
 
@@ -47,9 +51,13 @@ class MainPageController {
       );
       await launch('$mailtoLink');
     } catch (e) {
-      print('Error launching mailto: $e');
+      TLogger.log.e('Error launching mailto: $e');
     }
   }
 
-
+  Future<List<CertificateModel>> loadCertificate() async {
+    String data = await rootBundle.loadString(TTexts.jsonCertificate);
+    List<dynamic> json = jsonDecode(data);
+    return json.map((e) => CertificateModel.fromJson(e)).toList();
+  }
 }

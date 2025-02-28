@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mys/components/card_project.dart';
+import 'package:mys/features/main/models/certificate_model.dart';
 import 'package:mys/features/main/screens/pdf_view_page.dart';
 import 'package:mys/utils/constans/colors.dart';
 import 'package:mys/utils/constans/image_strings.dart';
 import 'package:mys/common/widgets/custom_elevated_button.dart';
 import 'package:mys/common/widgets/custom_social_media_button.dart';
 
+import '../../../utils/constans/text_strings.dart';
 import '../controllers/main_page_controller.dart';
 
 class MainPage extends StatefulWidget {
   static const String routeName = '/';
-  MainPage({super.key});
+  const MainPage({super.key});
 
   @override
   State<MainPage> createState() => _MainPageState();
@@ -19,7 +21,20 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   final MainPageController controller = MainPageController();
-  bool isPermission = false;
+  List<CertificateModel> certificate = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _fetchCertificate();
+  }
+
+  Future<void> _fetchCertificate() async {
+    List<CertificateModel> data = await controller.loadCertificate();
+    setState(() {
+      certificate = data;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -82,23 +97,24 @@ class _MainPageState extends State<MainPage> {
                 const SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     Text("Project",
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.bold)),
-                    Text("View More", style: TextStyle(color: Colors.blue)),
+                    TextButton(
+                      onPressed: () {},
+                      child: Text("View All"),
+                    ),
                   ],
                 ),
                 const SizedBox(height: 10),
                 ListView.builder(
                   shrinkWrap: true,
+                  itemCount: certificate.length,
                   physics: const NeverScrollableScrollPhysics(),
-                  itemCount: 2,
                   itemBuilder: (BuildContext context, int index) {
                     return CardProject(
-                      image: TImages.sertificate,
-                      title: 'Sertificate of Appreciation',
-                      date: '20 February 2024',
+                      certificate: certificate[index],
                     );
                   },
                 ),

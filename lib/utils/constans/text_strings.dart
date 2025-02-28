@@ -14,4 +14,7 @@ class TTexts {
 
   // -- File PDF
   static const String cvPDF = "assets/pdf/cv-muhammadsadri.pdf";
+
+  // -- Json Certificate
+  static const String jsonCertificate = "assets/json/certificate.json";
 }

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "nama_sertifikat": "BELAJAR DASAR-DASAR DEVOPS",
+    "lembaga": "DICODING",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/Belajar%20Dasar-Dasar%20DevOps.pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/BELAJAR%20DASAR-DASAR%20DEVOPS.png"
+  },
+  {
+    "id": 2,
+    "nama_sertifikat": "BELAJAR DASAR MANAJEMEN PROYEK",
+    "lembaga": "DICODING",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/Belajar%20Dasar%20Manajemen%20Proyek.pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/BELAJAR%20DASAR%20MANAJEMEN%20PROYEK.png"
+  },
+  {
+    "id": 3,
+    "nama_sertifikat": "BELAJAR DASAR PEMOGRAMAN WEB",
+    "lembaga": "DICODING",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/Belajar%20Dasar%20Pemograman%20Web.pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/BELAJAR%20DASAR%20PEMOGRAMAN%20WEB.png"
+  },
+  {
+    "id": 4,
+    "nama_sertifikat": "BELAJAR DASAR STRUCTURED QUERY LANGUAGE (SQL)",
+    "lembaga": "DICODING",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/Belajar%20Dasar%20Structured%20Query%20Language%20(SQL).pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/BELAJAR%20DASAR%20STRUCTURED%20QUERY%20LANGUAGE%20(SQL).png"
+  },
+  {
+    "id": 5,
+    "nama_sertifikat": "BELAJAR MEMBUAT APLIKASI FLUTTER UNTUK PEMULA",
+    "lembaga": "DICODING",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/Belajar%20Membuat%20Aplikasi%20Flutter%20untuk%20Pemula.pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/BELAJAR%20MEMBUAT%20APLIKASI%20FLUTTER%20UNTUK%20PEMULA.png"
+  },
+  {
+    "id": 6,
+    "nama_sertifikat": "CERTIFICATE - BTI ENERGY",
+    "lembaga": "BTI ENERGI",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/CERTIFICATE%20-%20BTI%20ENERGY.pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/CERTIFICATE%20-%20BTI%20ENERGY.png"
+  },
+  {
+    "id": 7,
+    "nama_sertifikat": "CLOUD PRACTITIONER ESSENTIALS (BELAJAR DASAR AWS CLOUD)",
+    "lembaga": "DICODING",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/Cloud%20Practitioner%20Essentials%20(Belajar%20Dasar%20AWS%20Cloud).pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/CLOUD%20PRACTITIONER%20ESSENTIALS%20(BELAJAR%20DASAR%20AWS%20CLOUD).png"
+  },
+  {
+    "id": 8,
+    "nama_sertifikat": "DART & FLUTTER DEVELOPMENT BOOTCAMP FIND HOUSE APP",
+    "lembaga": "BUILDWITHANGGA",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/Dart%20&%20Flutter%20Development%20Bootcamp%20Find%20House%20App.pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/DART%20&%20FLUTTER%20DEVELOPMENT%20BOOTCAMP%20FIND%20HOUSE%20APP.png"
+  },
+  {
+    "id": 9,
+    "nama_sertifikat": "MEMULAI DASAR PEMOGRAMAN UNTUK MENJADI PENGEMBANG SOFTWARE",
+    "lembaga": "DICODING",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/Memulai%20Dasar%20Pemograman%20Untuk%20Menjadi%20Pengembang%20Software.pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/MEMULAI%20DASAR%20PEMOGRAMAN%20UNTUK%20MENJADI%20PENGEMBANG%20SOFTWARE.png"
+  },
+  {
+    "id": 10,
+    "nama_sertifikat": "MEMULAI PEMOGRAMAN DENGAN DART",
+    "lembaga": "DICODING",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/Memulai%20Pemograman%20dengan%20Dart.pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/MEMULAI%20PEMOGRAMAN%20DENGAN%20DART.png"
+  },
+  {
+    "id": 11,
+    "nama_sertifikat": "MEMULAI PEMOGRAMAN DENGAN PYTHON",
+    "lembaga": "DICODING",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/Memulai%20Pemograman%20dengan%20Python.pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/MEMULAI%20PEMOGRAMAN%20DENGAN%20PYTHON.png"
+  },
+  {
+    "id": 12,
+    "nama_sertifikat": "MSIB - PROJECT MANAGEMENT",
+    "lembaga": "KEMENDIKBUD",
+    "pdf_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/PDF/MSIB%20-%20Project%20Management.pdf",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/MSIB%20-%20PROJECT%20MANAGEMENT.png"
+  }
+]

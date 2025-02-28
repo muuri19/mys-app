@@ -11,7 +11,6 @@ class TBottomSheetTheme {
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
   );
 
-  
   static BottomSheetThemeData darkBottomSheetTheme = BottomSheetThemeData(
     showDragHandle: true,
     backgroundColor: Colors.black,

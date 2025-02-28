@@ -33,12 +33,19 @@ dependencies:
   # Mailto
   mailto: ^2.0.0
 
+  # Json
+  json_annotation: ^4.9.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^5.0.0
   flutter_launcher_icons: ^0.14.3
+
+  # Setup Json to Model
+  build_runner: ^2.4.15
+  json_serializable: ^6.9.4
 
 #------------ ./ PACKAGE END ------------#
 
@@ -73,6 +80,10 @@ flutter:
     - assets/images/
     - assets/images/profile.jpg
     - assets/images/sertifikat/sertifikat-1.jpg
+
+    # Json
+    - assets/json/certificate.json
+
     # Icons
     - assets/icons/
 

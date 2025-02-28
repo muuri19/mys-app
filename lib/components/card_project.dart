@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:mys/common/widgets/custom_elevated_button.dart';
+import 'package:mys/features/main/models/certificate_model.dart';
+import 'package:mys/features/main/screens/detail_page.dart';
 
 class CardProject extends StatelessWidget {
-  final String image;
-  final String title;
-  final String date;
+  final CertificateModel certificate;
   const CardProject(
-      {super.key,
-      required this.image,
-      required this.title,
-      required this.date});
+      {super.key, required this.certificate,
+    });
 
   @override
   Widget build(BuildContext context) {
@@ -27,21 +25,21 @@ class CardProject extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(color: Colors.grey, width: 1),
                 image: DecorationImage(
-                    image: AssetImage(image), fit: BoxFit.cover),
+                    image: NetworkImage(certificate.bannerUrl), fit: BoxFit.cover),
               ),
             ),
             SizedBox(
               height: 10,
             ),
             Text(
-              title,
+              certificate.namaSertifikat,
               style: Theme.of(context).textTheme.titleLarge,
             ),
             SizedBox(
               height: 5,
             ),
             Text(
-              date,
+              certificate.lembaga,
               style: Theme.of(context).textTheme.labelMedium,
             ),
             SizedBox(
@@ -49,7 +47,14 @@ class CardProject extends StatelessWidget {
             ),
             SizedBox(
                 width: MediaQuery.of(context).size.width,
-                child: CustomElevatedButton(text: "Detail", onPressed: () {}))
+                child: CustomElevatedButton(
+                    text: "Detail",
+                    onPressed: () {
+                      Navigator.pushNamed(
+                        context,
+                        DetailPage.routeName, arguments: certificate
+                      );
+                    }))
           ],
         ),
       ),
