@@ -11,15 +11,22 @@ class DetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(certificate.namaSertifikat),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios_new_rounded),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: 180,
+                height: 250,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(color: Colors.grey, width: 1),
@@ -43,7 +50,18 @@ class DetailPage extends StatelessWidget {
                 style: Theme.of(context).textTheme.labelMedium,
               ),
               SizedBox(
+                height: 5,
+              ),
+              Text(
+                certificate.date,
+                style: Theme.of(context).textTheme.labelMedium,
+              ),
+              SizedBox(
                 height: 10,
+              ),
+              Text(
+                certificate.deskripsi,
+                textAlign: TextAlign.justify,
               ),
             ],
           ),

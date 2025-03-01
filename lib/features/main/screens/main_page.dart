@@ -7,8 +7,6 @@ import 'package:mys/utils/constans/colors.dart';
 import 'package:mys/utils/constans/image_strings.dart';
 import 'package:mys/common/widgets/custom_elevated_button.dart';
 import 'package:mys/common/widgets/custom_social_media_button.dart';
-
-import '../../../utils/constans/text_strings.dart';
 import '../controllers/main_page_controller.dart';
 
 class MainPage extends StatefulWidget {

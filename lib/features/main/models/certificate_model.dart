@@ -12,34 +12,34 @@ String certificateModelToJson(List<CertificateModel> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class CertificateModel {
-  int id;
   String namaSertifikat;
   String lembaga;
-  String pdfUrl;
+  String date;
   String bannerUrl;
+  String deskripsi;
 
   CertificateModel({
-    required this.id,
     required this.namaSertifikat,
     required this.lembaga,
-    required this.pdfUrl,
+    required this.date,
     required this.bannerUrl,
+    required this.deskripsi,
   });
 
   factory CertificateModel.fromJson(Map<String, dynamic> json) =>
       CertificateModel(
-        id: json["id"],
         namaSertifikat: json["nama_sertifikat"],
         lembaga: json["lembaga"],
-        pdfUrl: json["pdf_url"],
+        date: json["date"],
         bannerUrl: json["banner_url"],
+        deskripsi: json["deskripsi"],
       );
 
   Map<String, dynamic> toJson() => {
-        "id": id,
         "nama_sertifikat": namaSertifikat,
         "lembaga": lembaga,
-        "pdf_url": pdfUrl,
+        "date": date,
         "banner_url": bannerUrl,
+        "deskripsi": deskripsi,
       };
 }
