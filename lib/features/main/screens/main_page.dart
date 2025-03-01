@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mys/components/card_project.dart';
 import 'package:mys/features/main/models/certificate_model.dart';
+import 'package:mys/features/main/screens/all_certificate.dart';
 import 'package:mys/features/main/screens/pdf_view_page.dart';
 import 'package:mys/utils/constans/colors.dart';
 import 'package:mys/utils/constans/image_strings.dart';
@@ -86,7 +87,7 @@ class _MainPageState extends State<MainPage> {
                     const SizedBox(width: 10),
                     CustomElevatedButton(
                       text: "Let's Connect",
-                      onPressed: () {},
+                      onPressed: controller.whatsappMe,
                     ),
                   ],
                 ),
@@ -100,7 +101,9 @@ class _MainPageState extends State<MainPage> {
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.bold)),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, AllCertificate.routeName);
+                      },
                       child: Text("View All"),
                     ),
                   ],
@@ -108,7 +111,9 @@ class _MainPageState extends State<MainPage> {
                 const SizedBox(height: 10),
                 ListView.builder(
                   shrinkWrap: true,
-                  itemCount: certificate.length,
+                  itemCount: certificate.isNotEmpty
+                      ? (certificate.length > 2 ? 2 : certificate.length)
+                      : 0,
                   physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (BuildContext context, int index) {
                     return CardProject(

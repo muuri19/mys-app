@@ -55,6 +55,16 @@ class MainPageController {
     }
   }
 
+  Future<void> whatsappMe() async {
+    try {
+      if (!await launchUrl(Uri.parse(TTexts.whatsappMe))) {
+        throw Exception('Could not launch ${TTexts.whatsappMe}');
+      }
+    } catch (e) {
+      TLogger.log.e('Error launching Whatsapp: $e');
+    }
+  }
+
   Future<List<CertificateModel>> loadCertificate() async {
     String data = await rootBundle.loadString(TTexts.jsonCertificate);
     List<dynamic> json = jsonDecode(data);

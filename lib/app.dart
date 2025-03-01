@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mys/features/main/models/certificate_model.dart';
+import 'package:mys/features/main/screens/all_certificate.dart';
 import 'package:mys/features/main/screens/detail_page.dart';
 import 'package:mys/features/main/screens/main_page.dart';
 import 'package:mys/features/settings/screens/setting_page.dart';
@@ -30,6 +31,7 @@ class App extends StatelessWidget {
               certificate: ModalRoute.of(context)!.settings.arguments
                   as CertificateModel,
             ),
+        AllCertificate.routeName: (context) => AllCertificate(),
       },
     );
   }
