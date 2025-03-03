@@ -1,5 +1,10 @@
 class TTexts {
   // -- GLOBAL Texts
+  static const String appName = "Muuri";
+
+  // -- Developer Texts
+  static const String developerName = "Muhammad Sadri";
+  static const String developerDescription = "I am a technology professional specializing in Multiplatform Development and IT Project Management, with expertise in Flutter, Dart, Supabase, and Agile methodologies to create efficient and impactful digital solutions.";
 
   // -- OnBoarding Texts
   static const String onBoardingTitle1 = "Welcome to the App";
@@ -19,5 +24,6 @@ class TTexts {
   // -- Json Certificate
   static const String jsonCertificate = "assets/json/certificate.json";
 
-  // --WhatsApp Me
+  // --Footer Texts
+  static const String footerText = "© 2025 muuri.my.id. All rights reserved.";
 }

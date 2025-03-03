@@ -4,10 +4,12 @@ import 'package:mys/components/card_project.dart';
 import 'package:mys/features/main/models/certificate_model.dart';
 import 'package:mys/features/main/screens/all_certificate.dart';
 import 'package:mys/features/main/screens/pdf_view_page.dart';
+import 'package:mys/features/settings/screens/setting_page.dart';
 import 'package:mys/utils/constans/colors.dart';
 import 'package:mys/utils/constans/image_strings.dart';
 import 'package:mys/common/widgets/custom_elevated_button.dart';
 import 'package:mys/common/widgets/custom_social_media_button.dart';
+import 'package:mys/utils/constans/text_strings.dart';
 import '../controllers/main_page_controller.dart';
 
 class MainPage extends StatefulWidget {
@@ -39,12 +41,12 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Muuri'),
+        title: Text(TTexts.appName),
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
             onPressed: () {
-              Navigator.pushNamed(context, '/settings');
+              Navigator.pushNamed(context, SettingsPage.routeName);
             },
           ),
         ],
@@ -60,18 +62,19 @@ class _MainPageState extends State<MainPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+// ------------------------- Hero Section ------------------------- //
                 const CircleAvatar(
                   radius: 50,
                   backgroundImage: AssetImage(TImages.profile),
                 ),
                 const SizedBox(height: 10),
-                const Text(
-                  "Muhammad Sadri",
+                Text(
+                  TTexts.developerName,
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 5),
-                const Text(
-                  "I am a technology professional specializing in Multiplatform Development and IT Project Management, with expertise in Flutter, Dart, Supabase, and Agile methodologies to create efficient and impactful digital solutions.",
+                Text(
+                  TTexts.developerDescription,
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 10),
@@ -94,17 +97,20 @@ class _MainPageState extends State<MainPage> {
                 const SizedBox(height: 20),
                 const Divider(),
                 const SizedBox(height: 10),
+// ------------------------- End Hero Section ------------------------- //
+
+// ------------------------- Project Section ------------------------- //
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Project",
+                    const Text("Project",
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.bold)),
                     TextButton(
                       onPressed: () {
                         Navigator.pushNamed(context, AllCertificate.routeName);
                       },
-                      child: Text("View All"),
+                      child: const Text("View All"),
                     ),
                   ],
                 ),
@@ -121,8 +127,11 @@ class _MainPageState extends State<MainPage> {
                     );
                   },
                 ),
-                Divider(),
-                SizedBox(
+                const Divider(),
+// ------------------------- End Project Section ------------------------- //
+
+// ------------------------- Contact Section ------------------------- //
+                const SizedBox(
                   width: double.infinity,
                   child: Text(
                     "Contact",
@@ -164,7 +173,11 @@ class _MainPageState extends State<MainPage> {
                 SizedBox(
                   height: 10,
                 ),
-                Text("© 2025 muuri.my.id. All rights reserved.")
+// ------------------------- End Contact Section ------------------------- //
+
+// ------------------------- Footer Section ------------------------- //
+                Text(TTexts.footerText)
+// ------------------------- End Footer Section ------------------------- //
               ],
             ),
           ),
