@@ -5,7 +5,11 @@ class TImages {
 
   // -- Images
   static const String profile = 'assets/images/profile.jpg';
+  static const String banner = 'assets/images/banner.jpg';
 
   // -- Sertificate
   static const String sertificate = 'assets/images/sertifikat/sertifikat-1.jpg';
+
+  // -- GIF
+  static const String bannerGif = 'assets/gifs/banner.gif';
 }

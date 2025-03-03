@@ -12,7 +12,7 @@ class TAppBarTheme {
     iconTheme: IconThemeData(color: Colors.black, size: 24),
     actionsIconTheme: IconThemeData(color: Colors.black, size: 24),
     titleTextStyle: TextStyle(
-      fontSize: 18,
+      fontSize: 14,
       fontWeight: FontWeight.w600,
       color: Colors.black,
     ),
@@ -26,7 +26,7 @@ class TAppBarTheme {
     iconTheme: IconThemeData(color: Colors.white, size: 24),
     actionsIconTheme: IconThemeData(color: Colors.white, size: 24),
     titleTextStyle: TextStyle(
-      fontSize: 18,
+      fontSize: 14,
       fontWeight: FontWeight.w600,
       color: Colors.white,
     ),

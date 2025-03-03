@@ -15,18 +15,21 @@ class CustomSocialMediaButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: ElevatedButton(
-        onPressed: onPressed,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          spacing: 10,
-          children: [
-            FaIcon(
-              icon,
-              color: Colors.black,
-            ),
-            Text(text),
-          ],
+      child: SizedBox(
+        height: 40,
+        child: ElevatedButton(
+          onPressed: onPressed,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            spacing: 10,
+            children: [
+              FaIcon(
+                icon,
+                color: Colors.white,
+              ),
+              Text(text),
+            ],
+          ),
         ),
       ),
     );

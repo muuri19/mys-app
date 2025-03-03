@@ -11,7 +11,7 @@ import 'features/main/screens/pdf_view_page.dart';
 import 'features/settings/providers/theme_provider.dart';
 
 class App extends StatelessWidget {
-  App({super.key});
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {

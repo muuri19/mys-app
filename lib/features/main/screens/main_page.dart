@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mys/components/card_project.dart';
+import 'package:mys/components/hero_section.dart';
 import 'package:mys/features/main/models/certificate_model.dart';
 import 'package:mys/features/main/screens/all_certificate.dart';
 import 'package:mys/features/main/screens/pdf_view_page.dart';
-import 'package:mys/features/settings/screens/setting_page.dart';
 import 'package:mys/utils/constans/colors.dart';
-import 'package:mys/utils/constans/image_strings.dart';
 import 'package:mys/common/widgets/custom_elevated_button.dart';
 import 'package:mys/common/widgets/custom_social_media_button.dart';
 import 'package:mys/utils/constans/text_strings.dart';
@@ -40,144 +39,161 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(TTexts.appName),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: () {
-              Navigator.pushNamed(context, SettingsPage.routeName);
-            },
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color(0xFF2C1A4A),
+              Color(0xFFA020F0),
+            ],
           ),
-        ],
-      ),
-      body: GlowingOverscrollIndicator(
-        showLeading: true,
-        showTrailing: true,
-        axisDirection: AxisDirection.down,
-        color: TColors.primaryColor,
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.only(left: 25, right: 25, bottom: 25),
+        ),
+        child: GlowingOverscrollIndicator(
+          showLeading: true,
+          showTrailing: true,
+          axisDirection: AxisDirection.down,
+          color: TColors.primaryColor,
+          child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-// ------------------------- Hero Section ------------------------- //
-                const CircleAvatar(
-                  radius: 50,
-                  backgroundImage: AssetImage(TImages.profile),
-                ),
-                const SizedBox(height: 10),
-                Text(
-                  TTexts.developerName,
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 5),
-                Text(
-                  TTexts.developerDescription,
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    CustomElevatedButton(
-                      text: "Download CV",
-                      onPressed: () {
-                        Navigator.pushNamed(context, PdfViewPage.routeName);
-                      },
-                    ),
-                    const SizedBox(width: 10),
-                    CustomElevatedButton(
-                      text: "Let's Connect",
-                      onPressed: controller.whatsappMe,
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 20),
-                const Divider(),
-                const SizedBox(height: 10),
-// ------------------------- End Hero Section ------------------------- //
-
-// ------------------------- Project Section ------------------------- //
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text("Project",
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    TextButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, AllCertificate.routeName);
-                      },
-                      child: const Text("View All"),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 10),
-                ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: certificate.isNotEmpty
-                      ? (certificate.length > 2 ? 2 : certificate.length)
-                      : 0,
-                  physics: const NeverScrollableScrollPhysics(),
-                  itemBuilder: (BuildContext context, int index) {
-                    return CardProject(
-                      certificate: certificate[index],
-                    );
-                  },
-                ),
-                const Divider(),
-// ------------------------- End Project Section ------------------------- //
-
-// ------------------------- Contact Section ------------------------- //
-                const SizedBox(
-                  width: double.infinity,
-                  child: Text(
-                    "Contact",
+                HeroSection(),
+                const SizedBox(height: 60),
+                Padding(
+                  padding:
+                      const EdgeInsets.only(left: 25, right: 25, bottom: 20),
+                  child: Column(
+                    children: [
+                      Text(
+                        TTexts.developerName,
+                        style: Theme.of(context).textTheme.headlineSmall,
+                      ),
+                      const SizedBox(height: 5),
+                      Text(
+                        TTexts.developerDescription,
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.labelMedium,
+                      ),
+                      const SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            height: 50,
+                            child: CustomElevatedButton(
+                              text: "Download CV",
+                              onPressed: () {
+                                Navigator.pushNamed(
+                                    context, PdfViewPage.routeName);
+                              },
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          SizedBox(
+                            height: 50,
+                            child: CustomElevatedButton(
+                              text: "Let's Connect",
+                              onPressed: controller.whatsappMe,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 10),
+                      const Divider(),
+                      const SizedBox(height: 5),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("CERTIFICATE",
+                              style: Theme.of(context).textTheme.headlineSmall),
+                          TextButton(
+                            onPressed: () {
+                              Navigator.pushNamed(
+                                  context, AllCertificate.routeName);
+                            },
+                            child: Text(
+                              "View All",
+                              style: Theme.of(context).textTheme.labelSmall,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 10),
+                      ListView.builder(
+                        shrinkWrap: true,
+                        itemCount: certificate.isNotEmpty
+                            ? (certificate.length > 2 ? 2 : certificate.length)
+                            : 0,
+                        physics: const NeverScrollableScrollPhysics(),
+                        itemBuilder: (BuildContext context, int index) {
+                          return CardProject(
+                            certificate: certificate[index],
+                          );
+                        },
+                      ),
+                      Divider(),
+                      Container(
+                        padding: EdgeInsets.only(top: 10),
+                        width: double.infinity,
+                        child: Text(
+                          "CONTACT",
+                          style: Theme.of(context).textTheme.headlineSmall,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Row(
+                        spacing: 10,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          CustomSocialMediaButton(
+                            text: "Github",
+                            icon: FontAwesomeIcons.github,
+                            onPressed: controller.launchUrlGithub,
+                          ),
+                          CustomSocialMediaButton(
+                            text: "Instargam",
+                            icon: FontAwesomeIcons.instagram,
+                            onPressed: controller.launchUrlInstagram,
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Row(
+                        spacing: 10,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          CustomSocialMediaButton(
+                            text: "Email",
+                            icon: FontAwesomeIcons.envelope,
+                            onPressed: controller.launchMailto,
+                          ),
+                          CustomSocialMediaButton(
+                            text: "Support",
+                            icon: FontAwesomeIcons.truckFast,
+                            onPressed: controller.launchUrlSaweria,
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Divider(),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        TTexts.footerText,
+                        style: Theme.of(context).textTheme.labelMedium,
+                      )
+                    ],
                   ),
-                ),
-                Row(
-                  spacing: 10,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    CustomSocialMediaButton(
-                      text: "Github",
-                      icon: FontAwesomeIcons.github,
-                      onPressed: controller.launchUrlGithub,
-                    ),
-                    CustomSocialMediaButton(
-                      text: "Instargam",
-                      icon: FontAwesomeIcons.instagram,
-                      onPressed: controller.launchUrlInstagram,
-                    ),
-                  ],
-                ),
-                Row(
-                  spacing: 10,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    CustomSocialMediaButton(
-                      text: "Email",
-                      icon: FontAwesomeIcons.envelope,
-                      onPressed: controller.launchMailto,
-                    ),
-                    CustomSocialMediaButton(
-                      text: "Support",
-                      icon: FontAwesomeIcons.truckFast,
-                      onPressed: controller.launchUrlSaweria,
-                    ),
-                  ],
-                ),
-                Divider(),
-                SizedBox(
-                  height: 10,
-                ),
-// ------------------------- End Contact Section ------------------------- //
-
-// ------------------------- Footer Section ------------------------- //
-                Text(TTexts.footerText)
-// ------------------------- End Footer Section ------------------------- //
+                )
               ],
             ),
           ),

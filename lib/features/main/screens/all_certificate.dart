@@ -6,7 +6,7 @@ import '../models/certificate_model.dart';
 
 class AllCertificate extends StatefulWidget {
   static const String routeName = '/all-certificate';
-  const AllCertificate({Key? key}) : super(key: key);
+  const AllCertificate({super.key});
 
   @override
   State<AllCertificate> createState() => _AllCertificateState();

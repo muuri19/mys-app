@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:mys/utils/constans/colors.dart';
 import 'package:mys/utils/theme/custom_themes/appbar_theme.dart';
 import 'package:mys/utils/theme/custom_themes/bottom_sheet_theme.dart';
 import 'package:mys/utils/theme/custom_themes/card_theme.dart';
 import 'package:mys/utils/theme/custom_themes/checkbox_theme.dart';
 import 'package:mys/utils/theme/custom_themes/chip_theme.dart';
+import 'package:mys/utils/theme/custom_themes/divider_theme.dart';
 import 'package:mys/utils/theme/custom_themes/elevated_button_theme.dart';
 import 'package:mys/utils/theme/custom_themes/outlined_button_theme.dart';
 import 'package:mys/utils/theme/custom_themes/switch_theme.dart';
@@ -17,7 +19,7 @@ class TAppTheme {
   /// ------------------ Light Theme Data ------------------
   static ThemeData lightTheme = ThemeData(
       useMaterial3: true,
-      fontFamily: 'Poppins',
+      fontFamily: GoogleFonts.nunito().fontFamily,
       brightness: Brightness.light,
       primaryColor: Colors.blue,
       textTheme: TTextTheme.lightTextTheme,
@@ -30,12 +32,13 @@ class TAppTheme {
       outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonThemeData,
       inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
       cardTheme: TCardTheme.lightCardTheme,
-      switchTheme: TSwitchTheme.lightSwitchThemewitchTheme);
+      switchTheme: TSwitchTheme.lightSwitchThemewitchTheme,
+      dividerTheme: TDividerTheme.lightDividerTheme);
 
   /// ------------------ Dark Theme Data ------------------
   static ThemeData darkTheme = ThemeData(
       useMaterial3: true,
-      fontFamily: 'Poppins',
+      fontFamily: GoogleFonts.nunito().fontFamily,
       brightness: Brightness.dark,
       primaryColor: TColors.primaryColor,
       textTheme: TTextTheme.darkTextTheme,
@@ -48,5 +51,6 @@ class TAppTheme {
       outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonThemeData,
       inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
       cardTheme: TCardTheme.darkCardTheme,
-      switchTheme: TSwitchTheme.darkSwitchTheme);
+      switchTheme: TSwitchTheme.darkSwitchTheme,
+      dividerTheme: TDividerTheme.darkDividerTheme);
 }

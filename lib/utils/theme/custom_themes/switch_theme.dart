@@ -6,13 +6,13 @@ class TSwitchTheme {
 
   static SwitchThemeData lightSwitchThemewitchTheme = SwitchThemeData(
     thumbColor: WidgetStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.disabled)) {
+      if (states.contains(WidgetState.disabled)) {
         return Colors.grey.withOpacity(0.4);
       }
       return Colors.white;
     }),
     trackColor: WidgetStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.disabled)) {
+      if (states.contains(WidgetState.disabled)) {
         return Colors.grey.withOpacity(0.4);
       }
       return Colors.grey;
@@ -21,13 +21,13 @@ class TSwitchTheme {
 
   static SwitchThemeData darkSwitchTheme = SwitchThemeData(
     thumbColor: WidgetStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.disabled)) {
+      if (states.contains(WidgetState.disabled)) {
         return Colors.grey.withOpacity(0.4);
       }
       return Colors.white;
     }),
     trackColor: WidgetStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.disabled)) {
+      if (states.contains(WidgetState.disabled)) {
         return Colors.grey.withOpacity(0.4);
       }
       return TColors.primaryColor;

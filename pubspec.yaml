@@ -23,6 +23,9 @@ dependencies:
   permission_handler: ^11.4.0
   syncfusion_flutter_pdfviewer: ^28.2.7
 
+  # Fonts
+  google_fonts: ^6.2.1
+
   # Icons
   cupertino_icons: ^1.0.8
   font_awesome_flutter: ^10.8.0
@@ -80,6 +83,10 @@ flutter:
     - assets/images/
     - assets/images/profile.jpg
     - assets/images/sertifikat/sertifikat-1.jpg
+    - assets/images/banner.jpg
+
+    # Gifs
+    - assets/gifs/banner.gif
 
     # Json
     - assets/json/certificate.json
