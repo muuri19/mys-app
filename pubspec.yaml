@@ -29,6 +29,7 @@ dependencies:
   # Icons
   cupertino_icons: ^1.0.8
   font_awesome_flutter: ^10.8.0
+  lottie: ^3.3.1
 
   # State Management
   provider: ^6.1.2
@@ -90,6 +91,7 @@ flutter:
 
     # Json
     - assets/json/certificate.json
+    - assets/json/android.json
 
     # Icons
     - assets/icons/

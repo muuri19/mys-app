@@ -12,4 +12,7 @@ class TImages {
 
   // -- GIF
   static const String bannerGif = 'assets/gifs/banner.gif';
+
+  // -- Lottie
+  static const String androidLottie = 'assets/json/android.json';
 }

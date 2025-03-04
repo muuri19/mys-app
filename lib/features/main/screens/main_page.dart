@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:mys/components/card_project.dart';
-import 'package:mys/components/hero_section.dart';
-import 'package:mys/features/main/models/certificate_model.dart';
-import 'package:mys/features/main/screens/all_certificate.dart';
-import 'package:mys/features/main/screens/pdf_view_page.dart';
-import 'package:mys/utils/constans/colors.dart';
-import 'package:mys/common/widgets/custom_elevated_button.dart';
-import 'package:mys/common/widgets/custom_social_media_button.dart';
-import 'package:mys/utils/constans/text_strings.dart';
+import 'package:mys/features/main/screens/cv_page.dart';
+import '/components/card_project.dart';
+import '/components/hero_section.dart';
+import '/features/main/models/certificate_model.dart';
+import '/features/main/screens/all_certificate.dart';
+import '/utils/constans/colors.dart';
+import '/common/widgets/custom_elevated_button.dart';
+import '/common/widgets/custom_social_media_button.dart';
+import '/utils/constans/text_strings.dart';
 import '../controllers/main_page_controller.dart';
 
 class MainPage extends StatefulWidget {
@@ -83,10 +83,9 @@ class _MainPageState extends State<MainPage> {
                           SizedBox(
                             height: 50,
                             child: CustomElevatedButton(
-                              text: "Download CV",
+                              text: "Curriculum Vitae",
                               onPressed: () {
-                                Navigator.pushNamed(
-                                    context, PdfViewPage.routeName);
+                                Navigator.pushNamed(context, CvPage.routeName);
                               },
                             ),
                           ),
@@ -120,7 +119,7 @@ class _MainPageState extends State<MainPage> {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 10),
+                      const SizedBox(height: 2),
                       ListView.builder(
                         shrinkWrap: true,
                         itemCount: certificate.isNotEmpty
