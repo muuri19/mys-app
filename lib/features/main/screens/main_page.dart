@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mys/features/main/screens/cv_page.dart';
+import 'package:mys/utils/helpers/telegram_logger.dart';
 import '/components/card_project.dart';
 import '/components/hero_section.dart';
 import '/features/main/models/certificate_model.dart';
@@ -86,6 +87,9 @@ class _MainPageState extends State<MainPage> {
                               text: "Curriculum Vitae",
                               onPressed: () {
                                 Navigator.pushNamed(context, CvPage.routeName);
+                                TelegramLogger.sendLog(
+                                    "User clicked Curriculum Vitae button",
+                                    feature: "Main Page");
                               },
                             ),
                           ),

@@ -22,6 +22,7 @@ dependencies:
   path_provider: ^2.1.5
   permission_handler: ^11.4.0
   syncfusion_flutter_pdfviewer: ^28.2.7
+  flutter_dotenv: ^5.2.1
 
   # Fonts
   google_fonts: ^6.2.1
@@ -78,6 +79,9 @@ flutter:
 
   #------------ LOCAL ASSETS ------------#
   assets:
+    # env
+    - .env
+    
     - assets/fonts/
 
     # Images

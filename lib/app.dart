@@ -23,7 +23,7 @@ class App extends StatelessWidget {
       themeMode: themeProvider.isDarkMode ? ThemeMode.dark : ThemeMode.light,
       darkTheme: TAppTheme.darkTheme,
       theme: TAppTheme.lightTheme,
-      initialRoute: SplashScreenPage.routeName,
+      initialRoute: MainPage.routeName,
       routes: {
         SplashScreenPage.routeName: (context) => const SplashScreenPage(),
         MainPage.routeName: (context) => MainPage(),
