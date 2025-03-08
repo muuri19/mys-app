@@ -39,16 +39,22 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [
-              Color(0xFF2C1A4A),
-              Color(0xFFA020F0),
-            ],
+            colors: isDarkMode
+                ? [
+                    const Color(0xFF2C1A4A),
+                    const Color(0xFFA020F0),
+                  ]
+                : [
+                    const Color(0xFFFBFBFB),
+                    const Color(0xFFFBFBFB),
+                  ],
           ),
         ),
         child: GlowingOverscrollIndicator(
