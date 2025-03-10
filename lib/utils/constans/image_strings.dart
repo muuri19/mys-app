@@ -15,4 +15,5 @@ class TImages {
 
   // -- Lottie
   static const String androidLottie = 'assets/json/android.json';
+  static const String comingSoonLottie = 'assets/json/coming_soon.json';
 }

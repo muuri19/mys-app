@@ -1,4 +1,6 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:mys/common/widgets/custom_loading_animation.dart';
 import 'package:mys/features/main/models/certificate_model.dart';
 
 class DetailPage extends StatelessWidget {
@@ -30,9 +32,15 @@ class DetailPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(color: Colors.grey, width: 1),
-                  image: DecorationImage(
-                      image: NetworkImage(certificate.bannerUrl),
-                      fit: BoxFit.cover),
+                ),
+                child: CachedNetworkImage(
+                  imageUrl: certificate.bannerUrl,
+                  fit: BoxFit.cover,
+                  placeholder: (context, url) => Center(
+                    child: CustomLoadingAnimation(),
+                  ),
+                  errorWidget: (context, url, error) =>
+                      Icon(Icons.broken_image_rounded),
                 ),
               ),
               SizedBox(

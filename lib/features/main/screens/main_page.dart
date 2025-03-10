@@ -133,7 +133,7 @@ class _MainPageState extends State<MainPage> {
                       ListView.builder(
                         shrinkWrap: true,
                         itemCount: certificate.isNotEmpty
-                            ? (certificate.length > 2 ? 2 : certificate.length)
+                            ? (certificate.length > 1 ? 1 : certificate.length)
                             : 0,
                         physics: const NeverScrollableScrollPhysics(),
                         itemBuilder: (BuildContext context, int index) {

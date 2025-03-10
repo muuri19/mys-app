@@ -1,5 +1,12 @@
 [
   {
+    "nama_sertifikat": "MSIB - PROJECT MANAGEMENT",
+    "lembaga": "KEMENDIKBUD",
+    "date": "30 Juli 2023",
+    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/MSIB%20-%20PROJECT%20MANAGEMENT.png",
+    "deskripsi": "Project Management adalah proses perencanaan, pelaksanaan, dan pengendalian proyek agar mencapai tujuan yang telah ditetapkan. Ini mencakup manajemen sumber daya, risiko, serta komunikasi antar tim dan pemangku kepentingan. Dengan pendekatan yang sistematis, project management membantu menyelesaikan proyek secara efisien dan efektif."
+  },
+  {
     "nama_sertifikat": "BELAJAR DASAR-DASAR DEVOPS",
     "lembaga": "DICODING",
     "date": "23 Februari 2023",
@@ -75,13 +82,6 @@
     "date": "12 Desember 2023",
     "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/MEMULAI%20PEMOGRAMAN%20DENGAN%20PYTHON.png",
     "deskripsi": "Python adalah bahasa pemrograman interpretatif yang dapat digunakan di berbagai platform dengan filosofi perancangan yang berfokus pada tingkat keterbacaan kode dan merupakan bahasa populer yang berkaitan dengan Data Science dan Machine Learning. Keunggulan Python yang bersifat interpretatif juga banyak digunakan untuk prototyping, scripting dalam pengelolaan infrastruktur, hingga pembuatan website berskala besar. Dengan kemudahan Python tersebut, sering dijadikan bahasa pertama untuk belajar pemrograman.�"
-  },
-  {
-    "nama_sertifikat": "MSIB - PROJECT MANAGEMENT",
-    "lembaga": "KEMENDIKBUD",
-    "date": "30 Juli 2023",
-    "banner_url": "https://sngulaktwnekzvirfydy.supabase.co/storage/v1/object/public/sertifikat/BANNER/MSIB%20-%20PROJECT%20MANAGEMENT.png",
-    "deskripsi": "Project Management adalah proses perencanaan, pelaksanaan, dan pengendalian proyek agar mencapai tujuan yang telah ditetapkan. Ini mencakup manajemen sumber daya, risiko, serta komunikasi antar tim dan pemangku kepentingan. Dengan pendekatan yang sistematis, project management membantu menyelesaikan proyek secara efisien dan efektif."
   },
   {
     "nama_sertifikat": "ASSISTANT DOSEN",

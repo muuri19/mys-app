@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:mys/utils/constans/colors.dart';
+import '/utils/constans/colors.dart';
 
 class CustomLoadingAnimation extends StatelessWidget {
   const CustomLoadingAnimation({super.key});

@@ -43,6 +43,9 @@ dependencies:
   # Json
   json_annotation: ^4.9.0
 
+  # Web View
+  webview_flutter: ^4.10.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -98,6 +101,7 @@ flutter:
     # Json
     - assets/json/certificate.json
     - assets/json/android.json
+    - assets/json/coming_soon.json
 
     # Icons
     - assets/icons/

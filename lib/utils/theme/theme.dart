@@ -8,6 +8,7 @@ import 'package:mys/utils/theme/custom_themes/checkbox_theme.dart';
 import 'package:mys/utils/theme/custom_themes/chip_theme.dart';
 import 'package:mys/utils/theme/custom_themes/divider_theme.dart';
 import 'package:mys/utils/theme/custom_themes/elevated_button_theme.dart';
+import 'package:mys/utils/theme/custom_themes/list_tile_theme.dart';
 import 'package:mys/utils/theme/custom_themes/outlined_button_theme.dart';
 import 'package:mys/utils/theme/custom_themes/switch_theme.dart';
 import 'package:mys/utils/theme/custom_themes/text_field_theme.dart';
@@ -21,10 +22,10 @@ class TAppTheme {
       useMaterial3: true,
       fontFamily: GoogleFonts.nunito().fontFamily,
       brightness: Brightness.light,
-      primaryColor: Colors.blue,
+      primaryColor: TColors.primaryColor,
       textTheme: TTextTheme.lightTextTheme,
       chipTheme: TChipTheme.lightChipTheme,
-      scaffoldBackgroundColor: Colors.white,
+      scaffoldBackgroundColor: Color(0xFFFBFBFB),
       appBarTheme: TAppBarTheme.lightAppBarTheme,
       checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
       bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
@@ -33,7 +34,8 @@ class TAppTheme {
       inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
       cardTheme: TCardTheme.lightCardTheme,
       switchTheme: TSwitchTheme.lightSwitchThemewitchTheme,
-      dividerTheme: TDividerTheme.lightDividerTheme);
+      dividerTheme: TDividerTheme.lightDividerTheme,
+      listTileTheme: TListTileTheme.lightListTileTheme);
 
   /// ------------------ Dark Theme Data ------------------
   static ThemeData darkTheme = ThemeData(
@@ -52,5 +54,6 @@ class TAppTheme {
       inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
       cardTheme: TCardTheme.darkCardTheme,
       switchTheme: TSwitchTheme.darkSwitchTheme,
-      dividerTheme: TDividerTheme.darkDividerTheme);
+      dividerTheme: TDividerTheme.darkDividerTheme,
+      listTileTheme: TListTileTheme.darkListTileTheme);
 }
