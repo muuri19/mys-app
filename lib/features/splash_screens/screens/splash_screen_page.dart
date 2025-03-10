@@ -6,7 +6,7 @@ import '../controllers/splash_screen_controller.dart';
 
 class SplashScreenPage extends StatefulWidget {
   static const String routeName = '/splash';
-  const SplashScreenPage({Key? key}) : super(key: key);
+  const SplashScreenPage({super.key});
 
   @override
   State<SplashScreenPage> createState() => _SplashScreenPageState();

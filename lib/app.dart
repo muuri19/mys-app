@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:mys/features/main/models/certificate_model.dart';
-import 'package:mys/features/main/screens/all_certificate.dart';
-import 'package:mys/features/main/screens/cv_page.dart';
-import 'package:mys/features/main/screens/detail_page.dart';
-import 'package:mys/features/main/screens/main_page.dart';
-import 'package:mys/features/settings/screens/setting_page.dart';
-import 'package:mys/features/splash_screens/screens/splash_screen_page.dart';
-import 'package:mys/utils/theme/theme.dart';
+import '/features/main/models/certificate_model.dart';
+import '/features/main/screens/all_certificate.dart';
+import '/features/main/screens/cv_page.dart';
+import '/features/main/screens/detail_page.dart';
+import '/features/main/screens/main_page.dart';
+import '/features/settings/screens/setting_page.dart';
+import '/features/splash_screens/screens/splash_screen_page.dart';
+import '/utils/theme/theme.dart';
 import 'package:provider/provider.dart';
 
 import 'features/settings/providers/theme_provider.dart';
@@ -19,11 +19,11 @@ class App extends StatelessWidget {
     final themeProvider = Provider.of<ThemeProvider>(context);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'MyS',
+      title: 'My Muuri App',
       themeMode: themeProvider.isDarkMode ? ThemeMode.dark : ThemeMode.light,
       darkTheme: TAppTheme.darkTheme,
       theme: TAppTheme.lightTheme,
-      initialRoute: SplashScreenPage.routeName,
+      initialRoute: MainPage.routeName,
       routes: {
         SplashScreenPage.routeName: (context) => const SplashScreenPage(),
         MainPage.routeName: (context) => MainPage(),
