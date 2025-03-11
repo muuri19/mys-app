@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mys/features/main/screens/cv_page.dart';
-import 'package:mys/utils/helpers/telegram_logger.dart';
 import '/components/card_project.dart';
 import '/components/hero_section.dart';
 import '/features/main/models/certificate_model.dart';
 import '/features/main/screens/all_certificate.dart';
 import '/utils/constans/colors.dart';
-import '/common/widgets/custom_elevated_button.dart';
 import '/common/widgets/custom_social_media_button.dart';
 import '/utils/constans/text_strings.dart';
 import '../controllers/main_page_controller.dart';
@@ -89,22 +87,19 @@ class _MainPageState extends State<MainPage> {
                         children: [
                           SizedBox(
                             height: 50,
-                            child: CustomElevatedButton(
-                              text: "Curriculum Vitae",
+                            child: ElevatedButton(
                               onPressed: () {
                                 Navigator.pushNamed(context, CvPage.routeName);
-                                TelegramLogger.sendLog(
-                                    "User clicked Curriculum Vitae button",
-                                    feature: "Main Page");
                               },
+                              child: Text("Curriculum Vitae"),
                             ),
                           ),
                           const SizedBox(width: 10),
                           SizedBox(
                             height: 50,
-                            child: CustomElevatedButton(
-                              text: "Let's Connect",
+                            child: ElevatedButton(
                               onPressed: controller.whatsappMe,
+                              child: Text("Let's Connect"),
                             ),
                           ),
                         ],

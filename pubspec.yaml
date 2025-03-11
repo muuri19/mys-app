@@ -26,6 +26,9 @@ dependencies:
   cached_network_image: ^3.4.1
   loading_animation_widget: ^1.3.0
 
+  # Internet checking
+  connectivity_plus: ^6.1.3
+
   # Fonts
   google_fonts: ^6.2.1
 
@@ -42,9 +45,6 @@ dependencies:
 
   # Json
   json_annotation: ^4.9.0
-
-  # Web View
-  webview_flutter: ^4.10.0
 
 dev_dependencies:
   flutter_test:
