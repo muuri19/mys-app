@@ -16,10 +16,8 @@ class TTexts {
   static const String instagramLink = "https://www.instagram.com/muuri._/";
   static const String saweriaLink = "https://saweria.co/muuri";
   static const String mailTo = "muuridevelopment@gmail.com";
-  static const String whatsappMe = "https://wa.me/6282315190276                     ";
+  static const String whatsappMe = "https://wa.me/6282315190276";
 
-  // -- File PDF
-  static const String cvPDF = "assets/pdf/cv-muhammadsadri.pdf";
 
   // -- Json Certificate
   static const String jsonCertificate = "assets/json/certificate.json";

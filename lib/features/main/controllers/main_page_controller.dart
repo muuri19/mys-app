@@ -3,9 +3,8 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:mailto/mailto.dart';
 import 'package:mys/features/main/models/certificate_model.dart';
-
 import 'package:mys/utils/constans/text_strings.dart';
-import 'package:mys/utils/logging/logger.dart';
+import 'package:mys/utils/error_handler.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
@@ -19,8 +18,8 @@ class MainPageController {
       if (!await launchUrl(_urlGithub)) {
         throw Exception('Could not launch $_urlGithub');
       }
-    } catch (e) {
-      TLogger.log.e('Error launching Github: $e');
+    } catch (error) {
+      throw handleError(error);
     }
   }
 
@@ -29,8 +28,8 @@ class MainPageController {
       if (!await launchUrl(_urlInstagram)) {
         throw Exception('Could not launch $_urlInstagram');
       }
-    } catch (e) {
-      TLogger.log.e('Error launching Instagram: $e');
+    } catch (error) {
+      throw handleError(error);
     }
   }
 
@@ -39,8 +38,8 @@ class MainPageController {
       if (!await launchUrl(_urlSaweria)) {
         throw Exception('Could not launch $_urlSaweria');
       }
-    } catch (e) {
-      TLogger.log.e('Error launching Saweria: $e');
+    } catch (error) {
+      throw handleError(error);
     }
   }
 
@@ -49,9 +48,16 @@ class MainPageController {
       final mailtoLink = Mailto(
         to: [TTexts.mailTo],
       );
-      await launch('$mailtoLink');
-    } catch (e) {
-      TLogger.log.e('Error launching mailto: $e');
+
+      final uri = Uri.parse('$mailtoLink');
+
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(uri);
+      } else {
+        throw Exception('Tidak dapat meluncurkan email.');
+      }
+    } catch (error) {
+      throw handleError(error);
     }
   }
 
@@ -60,8 +66,8 @@ class MainPageController {
       if (!await launchUrl(Uri.parse(TTexts.whatsappMe))) {
         throw Exception('Could not launch ${TTexts.whatsappMe}');
       }
-    } catch (e) {
-      TLogger.log.e('Error launching Whatsapp: $e');
+    } catch (error) {
+      throw handleError(error);
     }
   }
 
