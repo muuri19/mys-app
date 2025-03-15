@@ -88,8 +88,27 @@ flutter:
     # Images
     - assets/images/
     - assets/images/profile.jpg
-    - assets/images/sertifikat/sertifikat-1.jpg
     - assets/images/banner.jpg
+
+    # Images Certificate
+    - assets/images/certificate/BELAJAR-BACKEND-PEMULA-UNTUK-JAVASCRIPT.webp
+    - assets/images/certificate/BELAJAR-DASAR-DASAR-DEVOPS.webp
+    - assets/images/certificate/BELAJAR-DASAR-MANAJEMEN-PROYEK.webp
+    - assets/images/certificate/BELAJAR-DASAR-PEMOGRAMAN-WEB.webp
+    - assets/images/certificate/BELAJAR-DASAR-STRUCTURED-QUERY-LANGUAGE-(SQL).webp
+    - assets/images/certificate/BELAJAR-FUNDAMENTAL-APLIKASI-FLUTTER.webp
+    - assets/images/certificate/BELAJAR-MEMBUAT-APLIKASI-FLUTTER-UNTUK-PEMULA.webp
+    - assets/images/certificate/CERTIFICATE-BTI-ENERGY.png
+    - assets/images/certificate/CLOUD-PRACTITIONER-ESSENTIALS.webp
+    - assets/images/certificate/DART-FLUTTER-DEVELOPMENT-BOOTCAMP-FIND-HOUSE-APP.webp
+    - assets/images/certificate/MEMULAI-PEMOGRAMAN-DENGAN-PYTHON.webp
+    - assets/images/certificate/MEMULAI-DASAR-PEMOGRAMAN-UNTUK-MENJADI-PENGEMBANGSOFTWARE.webp
+    - assets/images/certificate/MEMULAI-PEMOGRAMAN-DENGAN-DART.webp
+    - assets/images/certificate/MSIB-PROJECT-MANAGEMENT.webp
+    - assets/images/certificate/CHEVALIER-LAB.webp
+    - assets/images/certificate/PANITIA-TELKOM.webp
+    - assets/images/certificate/PT-SINTECH-FLUTTER.webp
+    - assets/images/certificate/SCHOLARSHIP4US.webp
 
     # Gifs
     - assets/gifs/banner.gif
@@ -104,5 +123,3 @@ flutter:
 
     # Logos
     - assets/logos/logo.png
-
-

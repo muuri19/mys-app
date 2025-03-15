@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '/common/widgets/custom_elevated_button.dart';
 import '/common/widgets/custom_loading_animation.dart';
@@ -28,14 +27,9 @@ class CardProject extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(color: Colors.grey, width: 1),
               ),
-              child: CachedNetworkImage(
-                imageUrl: certificate.bannerUrl,
+              child: Image.asset(
+                certificate.bannerUrl,
                 fit: BoxFit.cover,
-                placeholder: (context, url) => Center(
-                  child: CustomLoadingAnimation(),
-                ),
-                errorWidget: (context, url, error) =>
-                    Icon(Icons.broken_image_rounded),
               ),
             ),
             SizedBox(
