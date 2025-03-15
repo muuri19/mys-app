@@ -12,7 +12,7 @@ Future main() async {
   runApp(
     ChangeNotifierProvider(
       create: (context) => ThemeProvider(),
-      child: App(),
+      child: const App(),
     ),
   );
 }

@@ -15,7 +15,7 @@ class HeroSection extends StatelessWidget {
         Container(
           width: double.infinity,
           height: 125,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage(TImages.bannerGif),
               fit: BoxFit.cover,
@@ -26,7 +26,7 @@ class HeroSection extends StatelessWidget {
           top: 10,
           right: 10,
           child: IconButton(
-            icon: Icon(Icons.settings, color: Colors.white, size: 20),
+            icon: const Icon(Icons.settings, color: Colors.white, size: 20),
             onPressed: () {
               Navigator.pushNamed(context, SettingsPage.routeName);
             },
@@ -41,9 +41,9 @@ class HeroSection extends StatelessWidget {
               Container(
                 width: 110,
                 height: 110,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  gradient: const LinearGradient(
+                  gradient: LinearGradient(
                     colors: [Color(0xFFA020F0), Color(0xFF2C1A4A)],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
@@ -53,12 +53,12 @@ class HeroSection extends StatelessWidget {
                       color: Color.fromRGBO(0, 0, 0, 0.3),
                       blurRadius: 10,
                       spreadRadius: 2,
-                      offset: const Offset(0, 4),
+                      offset: Offset(0, 4),
                     ),
                   ],
                 ),
               ),
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50,
                 backgroundImage: AssetImage(TImages.profile),
                 backgroundColor: Colors.white,
@@ -70,19 +70,19 @@ class HeroSection extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                   decoration: BoxDecoration(
-                    color: Color(0xFFA020F0),
+                    color: const Color(0xFFA020F0),
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
-                      BoxShadow(
+                      const BoxShadow(
                         color: Color.fromRGBO(0, 0, 0, 0.2),
                         blurRadius: 5,
                         spreadRadius: 1,
                       ),
                     ],
                   ),
-                  child: Text(
+                  child: const Text(
                     "Hallo !",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: Colors.white,
                       fontSize: 14,
                       fontWeight: FontWeight.bold,

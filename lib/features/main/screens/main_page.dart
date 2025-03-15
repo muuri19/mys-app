@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '/features/main/screens/cv_page.dart';
+
 import '/components/card_project.dart';
 import '/components/hero_section.dart';
 import '/features/main/models/certificate_model.dart';
 import '/features/main/screens/all_certificate.dart';
+import '/features/main/screens/cv_page.dart';
 import '/utils/constans/colors.dart';
-import '/widgets/custom_social_media_button.dart';
 import '/utils/constans/text_strings.dart';
+import '/widgets/custom_social_media_button.dart';
 import '../controllers/main_page_controller.dart';
 
 class MainPage extends StatefulWidget {
@@ -64,7 +65,7 @@ class _MainPageState extends State<MainPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                HeroSection(),
+                const HeroSection(),
                 const SizedBox(height: 60),
                 Padding(
                   padding:
@@ -91,7 +92,7 @@ class _MainPageState extends State<MainPage> {
                               onPressed: () {
                                 Navigator.pushNamed(context, CvPage.routeName);
                               },
-                              child: Text("Curriculum Vitae"),
+                              child: const Text("Curriculum Vitae"),
                             ),
                           ),
                           const SizedBox(width: 10),
@@ -99,7 +100,7 @@ class _MainPageState extends State<MainPage> {
                             height: 50,
                             child: ElevatedButton(
                               onPressed: controller.whatsappMe,
-                              child: Text("Let's Connect"),
+                              child: const Text("Let's Connect"),
                             ),
                           ),
                         ],
@@ -137,16 +138,16 @@ class _MainPageState extends State<MainPage> {
                           );
                         },
                       ),
-                      Divider(),
+                      const Divider(),
                       Container(
-                        padding: EdgeInsets.only(top: 10),
+                        padding: const EdgeInsets.only(top: 10),
                         width: double.infinity,
                         child: Text(
                           "CONTACT",
                           style: Theme.of(context).textTheme.headlineSmall,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Row(
@@ -165,7 +166,7 @@ class _MainPageState extends State<MainPage> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Row(
@@ -184,11 +185,11 @@ class _MainPageState extends State<MainPage> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
-                      Divider(),
-                      SizedBox(
+                      const Divider(),
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(

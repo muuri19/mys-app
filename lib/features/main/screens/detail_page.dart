@@ -12,7 +12,7 @@ class DetailPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(certificate.namaSertifikat),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_rounded),
+          icon: const Icon(Icons.arrow_back_ios_new_rounded),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -36,28 +36,28 @@ class DetailPage extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Text(
                 certificate.namaSertifikat,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Text(
                 certificate.lembaga,
                 style: Theme.of(context).textTheme.labelMedium,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Text(
                 certificate.date,
                 style: Theme.of(context).textTheme.labelMedium,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Text(

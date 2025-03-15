@@ -26,14 +26,14 @@ class App extends StatelessWidget {
       initialRoute: SplashScreenPage.routeName,
       routes: {
         SplashScreenPage.routeName: (context) => const SplashScreenPage(),
-        MainPage.routeName: (context) => MainPage(),
+        MainPage.routeName: (context) => const MainPage(),
         CvPage.routeName: (context) => const CvPage(),
         SettingsPage.routeName: (context) => const SettingsPage(),
         DetailPage.routeName: (context) => DetailPage(
               certificate: ModalRoute.of(context)!.settings.arguments
                   as CertificateModel,
             ),
-        AllCertificate.routeName: (context) => AllCertificate(),
+        AllCertificate.routeName: (context) => const AllCertificate(),
       },
     );
   }

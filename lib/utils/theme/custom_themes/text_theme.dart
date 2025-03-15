@@ -21,42 +21,42 @@ class TTextTheme {
         fontWeight: FontWeight.w600,
         color: Colors.black,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    titleLarge: TextStyle().copyWith(
+    titleLarge: const TextStyle().copyWith(
         fontSize: 16,
         fontWeight: FontWeight.w600,
         color: Colors.black,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    titleMedium: TextStyle().copyWith(
+    titleMedium: const TextStyle().copyWith(
         fontSize: 16,
         fontWeight: FontWeight.w500,
         color: Colors.black,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    titleSmall: TextStyle().copyWith(
+    titleSmall: const TextStyle().copyWith(
         fontSize: 16,
         fontWeight: FontWeight.w400,
         color: Colors.black,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    bodyLarge: TextStyle().copyWith(
+    bodyLarge: const TextStyle().copyWith(
         fontSize: 14,
         fontWeight: FontWeight.w500,
         color: Colors.black,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    bodyMedium: TextStyle().copyWith(
+    bodyMedium: const TextStyle().copyWith(
         fontSize: 14,
         fontWeight: FontWeight.normal,
         color: Colors.black,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    bodySmall: TextStyle().copyWith(
+    bodySmall: const TextStyle().copyWith(
         fontSize: 14,
         fontWeight: FontWeight.w500,
         color: Colors.black,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    labelLarge: TextStyle().copyWith(
+    labelLarge: const TextStyle().copyWith(
         fontSize: 12,
         fontWeight: FontWeight.normal,
         color: Colors.black,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    labelMedium: TextStyle().copyWith(
+    labelMedium: const TextStyle().copyWith(
         fontSize: 12,
         fontWeight: FontWeight.normal,
         color: Colors.black,
@@ -80,42 +80,42 @@ class TTextTheme {
         fontWeight: FontWeight.w600,
         color: Colors.white,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    titleLarge: TextStyle().copyWith(
+    titleLarge: const TextStyle().copyWith(
         fontSize: 16,
         fontWeight: FontWeight.w600,
         color: Colors.white,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    titleMedium: TextStyle().copyWith(
+    titleMedium: const TextStyle().copyWith(
         fontSize: 16,
         fontWeight: FontWeight.w500,
         color: Colors.white,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    titleSmall: TextStyle().copyWith(
+    titleSmall: const TextStyle().copyWith(
         fontSize: 16,
         fontWeight: FontWeight.w400,
         color: Colors.white,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    bodyLarge: TextStyle().copyWith(
+    bodyLarge: const TextStyle().copyWith(
         fontSize: 14,
         fontWeight: FontWeight.w500,
         color: Colors.white,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    bodyMedium: TextStyle().copyWith(
+    bodyMedium: const TextStyle().copyWith(
         fontSize: 14,
         fontWeight: FontWeight.normal,
         color: Colors.white,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    bodySmall: TextStyle().copyWith(
+    bodySmall: const TextStyle().copyWith(
         fontSize: 14,
         fontWeight: FontWeight.w500,
         color: Colors.white,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    labelLarge: TextStyle().copyWith(
+    labelLarge: const TextStyle().copyWith(
         fontSize: 12,
         fontWeight: FontWeight.normal,
         color: Colors.white,
         fontFamily: GoogleFonts.nunito().fontFamily),
-    labelMedium: TextStyle().copyWith(
+    labelMedium: const TextStyle().copyWith(
         fontSize: 12,
         fontWeight: FontWeight.normal,
         color: Colors.white,

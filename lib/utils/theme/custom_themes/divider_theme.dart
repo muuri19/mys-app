@@ -4,8 +4,7 @@ import 'package:mys/utils/constans/colors.dart';
 class TDividerTheme {
   TDividerTheme._();
 
-  static final lightDividerTheme =
+  static const lightDividerTheme =
       DividerThemeData(color: TColors.primaryColor);
-  static final darkDividerTheme =
-      DividerThemeData(color: Colors.white);
+  static const darkDividerTheme = DividerThemeData(color: Colors.white);
 }

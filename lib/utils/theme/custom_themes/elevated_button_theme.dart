@@ -13,9 +13,9 @@ class TElevatedButtonTheme {
       backgroundColor: TColors.primaryColor,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: BorderSide(color: TColors.primaryColor, width: 1),
+      side: const BorderSide(color: TColors.primaryColor, width: 1),
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-      textStyle: TextStyle(
+      textStyle: const TextStyle(
           fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
@@ -31,9 +31,9 @@ class TElevatedButtonTheme {
       backgroundColor: TColors.primaryColor,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: BorderSide(color: TColors.primaryColor, width: 1),
+      side: const BorderSide(color: TColors.primaryColor, width: 1),
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-      textStyle: TextStyle(
+      textStyle: const TextStyle(
           fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),

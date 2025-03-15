@@ -4,11 +4,11 @@ import 'package:mys/utils/constans/colors.dart';
 class TListTileTheme {
   TListTileTheme._();
 
-  static final lightListTileTheme = ListTileThemeData(
+  static const lightListTileTheme = ListTileThemeData(
       titleTextStyle: TextStyle(color: TColors.primaryColor),
       subtitleTextStyle: TextStyle(color: TColors.primaryColor));
 
-  static final darkListTileTheme = ListTileThemeData(
+  static const darkListTileTheme = ListTileThemeData(
       titleTextStyle: TextStyle(color: Colors.white),
       subtitleTextStyle: TextStyle(color: Colors.white));
 }

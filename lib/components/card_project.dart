@@ -31,21 +31,21 @@ class CardProject extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(
               certificate.namaSertifikat,
               style: Theme.of(context).textTheme.titleLarge,
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Text(
               certificate.lembaga,
               style: Theme.of(context).textTheme.labelMedium,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             SizedBox(

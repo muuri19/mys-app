@@ -8,7 +8,7 @@ class TCardTheme {
     surfaceTintColor: Colors.white,
     elevation: 4,
     shadowColor: Colors.grey,
-    margin: EdgeInsets.only(bottom: 10),
+    margin: const EdgeInsets.only(bottom: 10),
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(10),
     ),
@@ -18,7 +18,7 @@ class TCardTheme {
     surfaceTintColor: Colors.black,
     elevation: 4,
     shadowColor: Colors.grey,
-    margin: EdgeInsets.only(bottom: 10),
+    margin: const EdgeInsets.only(bottom: 10),
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(10),
     ),
