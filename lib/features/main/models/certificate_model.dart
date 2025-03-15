@@ -1,7 +1,3 @@
-// To parse this JSON data, do
-//
-//     final certificateModel = certificateModelFromJson(jsonString);
-
 import 'dart:convert';
 
 List<CertificateModel> certificateModelFromJson(String str) =>

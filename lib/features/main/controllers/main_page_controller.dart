@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:mailto/mailto.dart';
-import 'package:mys/features/main/models/certificate_model.dart';
-import 'package:mys/utils/constans/text_strings.dart';
-import 'package:mys/utils/error_handler.dart';
+import '/features/main/models/certificate_model.dart';
+import '/utils/constans/text_strings.dart';
+import '/utils/error_handler.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 

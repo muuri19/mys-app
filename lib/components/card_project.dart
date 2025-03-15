@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import '/common/widgets/custom_elevated_button.dart';
-import '/common/widgets/custom_loading_animation.dart';
+import '../widgets/custom_elevated_button.dart';
 import '/features/main/models/certificate_model.dart';
 import '/features/main/screens/detail_page.dart';
 

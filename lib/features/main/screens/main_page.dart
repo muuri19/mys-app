@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:mys/features/main/screens/cv_page.dart';
+import '/features/main/screens/cv_page.dart';
 import '/components/card_project.dart';
 import '/components/hero_section.dart';
 import '/features/main/models/certificate_model.dart';
 import '/features/main/screens/all_certificate.dart';
 import '/utils/constans/colors.dart';
-import '/common/widgets/custom_social_media_button.dart';
+import '/widgets/custom_social_media_button.dart';
 import '/utils/constans/text_strings.dart';
 import '../controllers/main_page_controller.dart';
 

@@ -1,7 +1,5 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:mys/common/widgets/custom_loading_animation.dart';
-import 'package:mys/features/main/models/certificate_model.dart';
+import '/features/main/models/certificate_model.dart';
 
 class DetailPage extends StatelessWidget {
   static const String routeName = '/detail';

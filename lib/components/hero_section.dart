@@ -50,7 +50,7 @@ class HeroSection extends StatelessWidget {
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.3),
+                      color: Color.fromRGBO(0, 0, 0, 0.3),
                       blurRadius: 10,
                       spreadRadius: 2,
                       offset: const Offset(0, 4),
@@ -74,7 +74,7 @@ class HeroSection extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.2),
+                        color: Color.fromRGBO(0, 0, 0, 0.2),
                         blurRadius: 5,
                         spreadRadius: 1,
                       ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:mys/utils/constans/image_strings.dart';
+import '/utils/constans/image_strings.dart';
 
 import '../controllers/splash_screen_controller.dart';
 

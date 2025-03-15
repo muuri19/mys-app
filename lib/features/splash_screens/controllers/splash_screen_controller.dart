@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:mys/features/main/screens/main_page.dart';
+import '/features/main/screens/main_page.dart';
 
 class SplashScreenController {
   Future<void> startSplashScreen(BuildContext context) async {
