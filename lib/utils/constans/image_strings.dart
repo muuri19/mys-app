@@ -5,7 +5,7 @@ class TImages {
 
   // -- Images
   static const String profile = 'assets/images/profile.jpg';
-  static const String banner = 'assets/images/banner.jpg';
+  static const String banner = 'assets/images/banner.png';
 
   // -- Sertificate
   static const String certificate1 =

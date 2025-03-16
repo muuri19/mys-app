@@ -105,9 +105,8 @@ class _MainPageState extends State<MainPage> {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 10),
-                      const Divider(),
                       const SizedBox(height: 5),
+                      const Divider(),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [

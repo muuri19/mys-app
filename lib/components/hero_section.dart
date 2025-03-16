@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mys/features/settings/screens/setting_page.dart';
+import 'package:mys/utils/constans/colors.dart';
 
 import '../utils/constans/image_strings.dart';
 
@@ -14,16 +15,17 @@ class HeroSection extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          height: 125,
+          height: 170,
           decoration: const BoxDecoration(
+            color: TColors.background,
             image: DecorationImage(
-              image: AssetImage(TImages.bannerGif),
-              fit: BoxFit.cover,
+              image: AssetImage(TImages.banner),
+              fit: BoxFit.scaleDown,
             ),
           ),
         ),
         Positioned(
-          top: 10,
+          top: 30,
           right: 10,
           child: IconButton(
             icon: const Icon(Icons.settings, color: Colors.white, size: 20),
