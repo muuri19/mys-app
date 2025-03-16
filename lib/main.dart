@@ -7,8 +7,7 @@ Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
     ChangeNotifierProvider(
-      create: (context) => ThemeProvider(),
-      child: const App(),
-    ),
+        create: (context) => ThemeProvider(),
+        child: const App(),)
   );
 }

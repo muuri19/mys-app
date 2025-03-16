@@ -37,8 +37,6 @@ class TImages {
   static const String certificate14 =
       '/images/certificate/MSIB-PROJECT-MANAGEMENT.webp';
 
-  // -- GIF
-  static const String bannerGif = 'assets/gifs/banner.gif';
 
   // -- Lottie
   static const String androidLottie = 'assets/json/android.json';

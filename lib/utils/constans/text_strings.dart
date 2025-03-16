@@ -4,7 +4,8 @@ class TTexts {
 
   // -- Developer Texts
   static const String developerName = "Muhammad Sadri";
-  static const String developerDescription = "I am a technology professional specializing in Multiplatform Development and IT Project Management, with expertise in Flutter, Dart, Supabase, and Agile methodologies to create efficient and impactful digital solutions.";
+  static const String developerDescription =
+      "I am a technology professional specializing in Multiplatform Development and IT Project Management, with expertise in Flutter, Dart, Supabase, and Agile methodologies to create efficient and impactful digital solutions.";
 
   // -- OnBoarding Texts
   static const String onBoardingTitle1 = "Welcome to the App";
@@ -17,7 +18,6 @@ class TTexts {
   static const String saweriaLink = "https://saweria.co/muuri";
   static const String mailTo = "muuridevelopment@gmail.com";
   static const String whatsappMe = "https://wa.me/6282315190276";
-
 
   // -- Json Certificate
   static const String jsonCertificate = "assets/json/certificate.json";
