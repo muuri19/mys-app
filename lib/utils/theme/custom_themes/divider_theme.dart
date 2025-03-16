@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mys/utils/constans/colors.dart';
+import '/utils/constans/colors.dart';
 
 class TDividerTheme {
   TDividerTheme._();

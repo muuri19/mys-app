@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mys/features/settings/screens/setting_page.dart';
-import 'package:mys/utils/constans/colors.dart';
+import '/features/settings/screens/setting_page.dart';
+import '/utils/constans/colors.dart';
 
 import '../utils/constans/image_strings.dart';
 
