@@ -5,7 +5,6 @@ import '/components/card_project.dart';
 import '/components/hero_section.dart';
 import '/features/main/models/certificate_model.dart';
 import '/features/main/screens/all_certificate.dart';
-import '/features/main/screens/cv_page.dart';
 import '/utils/constans/colors.dart';
 import '/utils/constans/text_strings.dart';
 import '/widgets/custom_social_media_button.dart';
@@ -83,27 +82,13 @@ class _MainPageState extends State<MainPage> {
                         style: Theme.of(context).textTheme.labelMedium,
                       ),
                       const SizedBox(height: 10),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          SizedBox(
-                            height: 50,
-                            child: ElevatedButton(
-                              onPressed: () {
-                                Navigator.pushNamed(context, CvPage.routeName);
-                              },
-                              child: const Text("Curriculum Vitae"),
-                            ),
-                          ),
-                          const SizedBox(width: 10),
-                          SizedBox(
-                            height: 50,
-                            child: ElevatedButton(
-                              onPressed: controller.whatsappMe,
-                              child: const Text("Let's Connect"),
-                            ),
-                          ),
-                        ],
+                      SizedBox(
+                        height: 50,
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          onPressed: controller.whatsappMe,
+                          child: const Text("Let's Connect"),
+                        ),
                       ),
                       const SizedBox(height: 5),
                       const Divider(),

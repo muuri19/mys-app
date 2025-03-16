@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '/features/main/models/certificate_model.dart';
 import '/features/main/screens/all_certificate.dart';
-import '/features/main/screens/cv_page.dart';
 import '/features/main/screens/detail_page.dart';
 import '/features/main/screens/main_page.dart';
 import '/features/settings/screens/setting_page.dart';
@@ -27,7 +26,6 @@ class App extends StatelessWidget {
       routes: {
         SplashScreenPage.routeName: (context) => const SplashScreenPage(),
         MainPage.routeName: (context) => const MainPage(),
-        CvPage.routeName: (context) => const CvPage(),
         SettingsPage.routeName: (context) => const SettingsPage(),
         DetailPage.routeName: (context) => DetailPage(
               certificate: ModalRoute.of(context)!.settings.arguments
